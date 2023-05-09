@@ -1,0 +1,164 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.label-radio {
+  cursor: pointer;
+}
+
+.radios {
+  display: block;
+  margin: 0 auto 0;
+  padding-top: 60px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.radios input {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin-top: 15px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.checkmark {
+  display: block;
+  height: 50px;
+  width: 50px;
+  background-color: #afafaf;
+  border-radius: 12px;
+  cursor: pointer;
+  margin: 0 auto 0;
+  margin-top: -50px;
+}
+
+.radios:hover input ~ .checkmark {
+  background-color: #ececec;
+}
+
+.radios input:checked ~ .checkmark {
+  background-color: #1b396ac5;
+}
+
+.checkmark:after {
+  content: "";
+  position: relative;
+  top: 17px;
+  display: none;
+}
+
+.radios input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.radios .checkmark:after {
+  margin: 0 auto 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #ffffff;
+}
+
+.div__contador {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #1b396ac5;
+  /* opacity: 0.7; */
+}
+
+.contador {
+  border: solid 1px #3333330c;
+  width: 350px;
+  display: grid;
+  padding: 20px;
+  padding-bottom: 30px;
+  border-radius: 40px;
+  background-color: aliceblue;
+  box-shadow: 0 8px 10px #3333333b;
+}
+
+.contador h1 {
+  margin-left: 13px;
+  text-transform: uppercase;
+  grid-column: 2;
+  grid-row: 1;
+  color: #000000;
+  padding-top: 20px;
+}
+
+.inicio__contador {
+  margin: 0 auto 0;
+  font-size: 8rem;
+  font-weight: bold;
+  grid-column: 2;
+  grid-row: 1;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  color: #000000;
+  text-shadow: 0 8px 10px #1b396a;
+}
+
+.boton {
+  margin-left: 13px;
+}
+
+.boton button {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 1rem;
+  border: none;
+  border-radius: 4px;
+  transition: 0.2s ease-in;
+  color: #eee;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.968);
+}
+
+.incremento {
+  background-color: #000000dd;
+  box-shadow: 0 2px 2px #4caf50;
+}
+
+.resetear {
+  background-color: #000000dd;
+  box-shadow: 0 2px 2px #f44336;
+}
+
+.decremento {
+  background-color: #000000dd;
+  box-shadow: 0 2px 2px #f3ad21;
+}
+
+.incremento:hover {
+  background-color: #4caf50;
+  box-shadow: 0 8px 10px #9b9b9b;
+}
+
+.resetear:hover {
+  background-color: #f44336;
+  box-shadow: 0 8px 10px #9b9b9b;
+}
+
+.decremento:hover {
+  background-color: #f3ad21;
+  box-shadow: 0 8px 10px #9b9b9b;
+}

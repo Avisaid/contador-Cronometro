@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contador</title>
+    <link rel="stylesheet" href="./resource/css/estilo.css" />
+</head>
+
+<body>
+    <!-- CRONOMETRO CONTADOR -->
+    <div class="div__contador">
+        <h2></h2>
+        <div class="contador">
+            <h1 class="contador__titulo">contador</h1>
+            <p class="inicio__contador"></p>
+            <div class="radios">
+                <label class="label-radio" for="cronometro">cronometro</label>
+                <input type="radio" class="radios" value="cronometro" id="cronometro" name="tipo" title="CRONOMETRO" />
+                <span class="checkmark"></span>
+            </div>
+            <div class="radios">
+                <label class="label-radio" for="contador">contador</label>
+                <input type="radio" class="radios" value="contador" id="contador" name="tipo" title="CONTADOR" />
+                <span class="checkmark"></span>
+            </div>
+
+            <div class="boton" id="botones">
+                <button class="incremento" id="incremento">incremento</button>
+                <button class="resetear" id="resetear">resetear</button>
+                <button class="decremento" id="decremento">decremento</button>
+            </div>
+        </div>
+    </div>
+    <!-- CRONOMETRO CONTADOR -->
+    <script src="./resource/js/script.js"></script>
+</body>
+
+</html>
